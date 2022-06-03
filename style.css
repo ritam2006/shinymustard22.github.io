@@ -21,6 +21,15 @@ header h1 {
 
 header p {
     font-size: 21px;
+    background-color: rgb(192, 192, 242);
+    max-width: fit-content;
+    padding-left: 24px;
+    padding-right: 24px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    display: inline-block;
+    border-radius: 12px;
+    margin-bottom: 12px;
 }
 
 nav {
@@ -51,7 +60,31 @@ a:hover {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 42px;
+    margin-top: 12px;
+    margin-bottom: 24px;
     max-width: 300px;
     max-height: 300px;
+}
+
+.section-header {
+    text-align: center;
+    font-size: 32px;
+    font-family: 'Shrikhand', cursive;
+    padding: 14px;
+    margin-top: 16px;
+    margin-bottom: 16px;
+    background-color: rgb(93, 216, 99);
+}
+
+#about-me-description {
+    text-align: center;
+    font-size: 24px;
+    background-color: rgb(192, 192, 242);
+    display: flex;
+    align-items: center;
+    padding: 12px;
+    margin-left: 12px;
+    margin-right: 12px;
+    border-radius: 12px;
+    min-height: 96px;
 }
