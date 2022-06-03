@@ -1,0 +1,57 @@
+* {
+    font-family: 'Fira Sans', sans-serif;
+}
+
+body {
+    background-color: rgb(178, 235, 177);
+    margin: 0px;
+    margin-top: 8px;
+}
+
+header {
+    margin: 10px;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 60px;
+    margin: 0px;
+    color: rgb(214, 42, 60);
+}
+
+header p {
+    font-size: 21px;
+}
+
+nav {
+    text-align: left;
+    font-size: 28px;
+    list-style: none;
+    display: inline-block;
+}
+
+nav li {
+    float: left;
+}
+
+nav li a {
+    padding: 8px;
+}
+
+a {
+    color: rgb(214, 80, 67);
+    text-decoration: none;
+}
+
+a:hover {
+    background-color: rgba(93, 216, 99, 50%);
+}
+
+.profile-photo {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 42px;
+    max-width: 300px;
+    max-height: 300px;
+}
