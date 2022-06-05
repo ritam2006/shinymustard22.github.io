@@ -110,16 +110,20 @@ a:hover {
     border-radius: 12px;
 }
 
-.recent-projects {
+#recent-projects {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
 }
 
 .project {
     font-size: 28px;
-    padding: 0px 12px;
+    margin: 0px 12px;
+    padding: 12px;
+    padding-bottom: 0px;
     text-align: center;
     display: grid;
+    border: 8px solid rgb(93, 216, 99);
+    border-radius: 12px;
 }
 
 .project-demo {
@@ -127,8 +131,24 @@ a:hover {
     max-height: 100%;
 }
 
-.project-link {
+.recent-project-link {
     display: inline-block;
     width: 100%;
     padding: 8px 0px;
+}
+
+#all-projects {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    font-size: 28px;
+    text-align: center;
+}
+
+.all-project-link {
+    border: 8px solid rgb(93, 216, 99);
+    border-radius: 12px;
+    margin-top: 0px;
+    margin-bottom: 12px;
+    margin-left: 12px;
+    margin-right: 12px;
 }
