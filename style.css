@@ -35,7 +35,7 @@ nav ul > li {
 }
 
 #dropdown li {
-    padding: 8px;
+    padding: 8px 8px;
 }
 
 #dropdown.active {
@@ -48,10 +48,6 @@ header {
     text-align: center;
     width: fit-content;
     margin: 12px auto;
-    position: sticky;
-    background-color: rgb(178, 235, 177);
-    top: 0;
-    border-radius: 12px;
 }
 
 header h1 {
@@ -112,4 +108,27 @@ a:hover {
     padding: 12px;
     margin: 0px 12px;
     border-radius: 12px;
+}
+
+.recent-projects {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.project {
+    font-size: 28px;
+    padding: 0px 12px;
+    text-align: center;
+    display: grid;
+}
+
+.project-demo {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.project-link {
+    display: inline-block;
+    width: 100%;
+    padding: 8px 0px;
 }
