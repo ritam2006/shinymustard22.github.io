@@ -33,7 +33,7 @@ body {
 a {
     color: rgb(214, 42, 60);
     text-decoration: none;
-    transition: all 0.3s ease;
+    transition: 0.3s ease;
 }
 
 a:hover {
@@ -138,4 +138,10 @@ header {
 
 .all-project-link:hover {
     border-color: rgb(247, 178, 18);
+}
+
+@media (max-width: 800px) {
+    * {
+        font-size: 14px;
+    }
 }
