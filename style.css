@@ -1,104 +1,92 @@
 * {
+    box-sizing: border-box;
     font-family: 'Fira Sans', sans-serif;
+    scroll-behavior: smooth;
     padding: 0;
     margin: 0;
 }
 
 body {
-    background-color: rgb(178, 235, 177);
+    background-color: rgb(25, 25, 112);
 }
 
-nav {
-    text-align: left;
+.navbar {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    padding: 0.75rem;
     font-size: 1.75rem;
+    background-color: rgb(25, 25, 84);
+    position: sticky;
+    top: 0;
 }
 
-nav ul {
+.navbar-items {
     display: flex;
     list-style: none;
-    padding-top: 0.5rem;
 }
 
-nav ul > li {
-    display: inline-block;
-    position: relative;
+.navbar-item + .navbar-item{
+    margin-left: 1rem;
 }
 
-#dropdown {
-    display: none;
-    position: absolute;
-    text-align: center;
-    left: 0;
-    top: 100%;
-    margin-top: 0.5rem;
-    padding: 0;
+a {
+    color: rgb(214, 42, 60);
+    text-decoration: none;
 }
 
-#dropdown li {
-    padding: 0.5rem;
-}
-
-#dropdown.active {
-    display: block;
-    background-color: rgba(93, 216, 99, 25%);
+a:hover {
+    color: rgb(247, 178, 18);
+    cursor: pointer;
 }
 
 header {
-    padding: 0.75rem 1.5rem;
+    padding-top: 1rem;
     text-align: center;
     width: fit-content;
     margin: 0 auto;
 }
 
-header h1 {
+#title {
     font-size: 4rem;
     margin: 0;
     color: rgb(214, 42, 60);
 }
 
-header p {
+#subtitle {
     font-size: 1.5rem;
-    background-color: rgb(192, 192, 242);
+    color: rgb(247, 178, 18);
+    background-color: rgb(25, 25, 84);
     max-width: fit-content;
-    padding: 0.75rem 1.5rem;
+    padding: 1rem 1.5rem;
     display: inline-block;
     border-radius: 0.75rem;
     margin-top: 0.75rem;
 }
 
-a {
-    color: rgb(214, 80, 67);
-    text-decoration: none;
-    cursor: pointer;
-    padding: 0.5rem;
-    transition: all 0.5s ease;
-}
-
-a:hover {
-    background: rgba(93, 216, 99, 50%);
-}
-
-.profile-photo {
+#profile-photo {
     display: block;
-    margin: 0.75rem auto;
+    margin: 1rem auto;
     max-width: 18rem;
     max-height: 18rem;
+    border-radius: 50%;
 }
 
 .section-header {
     text-align: center;
-    font-size: 2rem;
-    font-family: 'Shrikhand', cursive;
-    padding: 1rem;
-    margin-top: 1rem;
-    margin-bottom: 1rem;
-    background-color: rgb(93, 216, 99);
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: rgb(214, 42, 60);
+    padding: 0.75rem;
+    margin: 1rem 0;
+    background-color: rgb(25, 25, 84);
 }
 
 #about-me-description {
     text-align: center;
     font-size: 1.5rem;
-    background-color: rgb(192, 192, 242);
+    color: rgb(247, 178, 18);
+    background-color: rgb(25, 25, 84);
     display: flex;
     align-items: center;
     padding: 0.75rem;
@@ -111,26 +99,23 @@ a:hover {
     grid-template-columns: repeat(2, 1fr);
 }
 
-.project {
-    font-size: 1.75rem;
-    margin: 0 0.75rem;
-    padding: 0.75rem;
-    padding-bottom: 0;
+.recent-project-link {
+    font-size: 2rem;
     text-align: center;
-    display: grid;
-    border: 0.5rem solid rgb(93, 216, 99);
+    margin: 0 1rem;
+    padding: 1rem;
+    background-color: rgb(25, 25, 84);
+    border: 0.25rem solid rgb(25, 25, 84);
     border-radius: 0.75rem;
 }
 
-.project-demo {
-    max-width: 100%;
-    max-height: 100%;
+.recent-project-link:hover {
+    border-color: rgb(247, 178, 18);
 }
 
-.recent-project-link {
-    display: inline-block;
+.project img {
+    margin-top: 0.5rem;
     width: 100%;
-    padding: 0.5rem 0;
 }
 
 #all-projects {
@@ -141,10 +126,15 @@ a:hover {
 }
 
 .all-project-link {
-    border: 0.5rem solid rgb(93, 216, 99);
+    border: 0.25rem solid rgb(25, 25, 84);
+    background-color: rgb(25, 25, 84);
     border-radius: 0.75rem;
     margin-top: 0;
     margin-bottom: 0.75rem;
     margin-left: 0.75rem;
     margin-right: 0.75rem;
+}
+
+.all-project-link:hover {
+    border-color: rgb(247, 178, 18);
 }
