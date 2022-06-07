@@ -17,6 +17,7 @@ body {
     padding: 0.75rem;
     font-size: 1.75rem;
     background-color: rgb(25, 25, 84);
+    border-bottom: 0.25rem solid rgb(150, 222, 209);;
     position: sticky;
     top: 0;
 }
@@ -24,21 +25,69 @@ body {
 .navbar-items {
     display: flex;
     list-style: none;
+    align-items: center;
 }
 
 .navbar-item + .navbar-item{
-    margin-left: 1rem;
+    margin-left: 1.5rem;
+}
+
+.dropdown {
+    display: inline-block;
+    position: relative;
+}
+
+.select {
+    color: rgb(214, 42, 60);
+    cursor: pointer;
+    transition-duration: 0.3s;
+    transition-property: color;
+}
+
+.select:hover {
+    color: rgb(247, 178, 18);
+}
+
+.sm-links {
+    display: none;
+    list-style: none;
+    position: absolute;
+    text-align: center;
+    width: 100%;
+    transform: translateY(0.75rem);
+    padding: 1rem 1rem;
+    padding-top: 0.25rem;
+    background-color: rgb(25, 25, 84);
+    border: 0.25rem solid rgb(150, 222, 209);
+    border-top: none;
+}
+
+.sm-links.active {
+    display: block;
+}
+
+.sm-link + .sm-link {
+    margin-top: 1rem;
+}
+
+.fa-caret-down {
+    transition-duration: 0.3s;
+    transition-property: color;
+}
+
+.caret-rotate {
+    transform: rotate(180deg);
 }
 
 a {
     color: rgb(214, 42, 60);
     text-decoration: none;
-    transition: 0.3s ease;
+    transition-duration: 0.3s;
+    transition-property: color;
 }
 
 a:hover {
     color: rgb(247, 178, 18);
-    cursor: pointer;
 }
 
 header {
@@ -49,14 +98,14 @@ header {
 }
 
 #title {
-    font-size: 4rem;
+    font-size: 3.5rem;
     margin: 0;
     color: rgb(214, 42, 60);
 }
 
 #subtitle {
-    font-size: 1.5rem;
-    color: rgb(247, 178, 18);
+    font-size: 1.25rem;
+    color: rgb(150, 222, 209);
     background-color: rgb(25, 25, 84);
     max-width: fit-content;
     padding: 1rem 1.5rem;
@@ -81,12 +130,14 @@ header {
     padding: 0.75rem;
     margin: 1rem 0;
     background-color: rgb(25, 25, 84);
+    border-top: 0.25rem solid rgb(150, 222, 209);
+    border-bottom: 0.25rem solid rgb(150, 222, 209);
 }
 
 #about-me-description {
     text-align: center;
     font-size: 1.5rem;
-    color: rgb(247, 178, 18);
+    color: rgb(150, 222, 209);
     background-color: rgb(25, 25, 84);
     display: flex;
     align-items: center;
