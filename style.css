@@ -200,4 +200,8 @@ header {
     * {
         font-size: 14px;
     }
+
+    #recent-projects {
+        grid-template-columns: 1fr;
+    }
 }
