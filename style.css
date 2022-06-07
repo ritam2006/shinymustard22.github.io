@@ -40,7 +40,7 @@ body {
 .select {
     color: rgb(214, 42, 60);
     cursor: pointer;
-    transition-duration: 0.3s;
+    transition-duration: 300ms;
     transition-property: color;
 }
 
@@ -71,7 +71,7 @@ body {
 }
 
 .fa-caret-down {
-    transition-duration: 0.3s;
+    transition-duration: 300ms;
     transition-property: transform, color;
 }
 
@@ -82,7 +82,7 @@ body {
 a {
     color: rgb(214, 42, 60);
     text-decoration: none;
-    transition-duration: 0.3s;
+    transition-duration: 300ms;
     transition-property: color;
 }
 
@@ -159,6 +159,8 @@ header {
     background-color: rgb(25, 25, 84);
     border: 0.25rem solid rgb(25, 25, 84);
     border-radius: 0.75rem;
+    transition-duration: 300ms;
+    transition-property: border-color;
 }
 
 .recent-project-link:hover {
@@ -185,6 +187,8 @@ header {
     margin-bottom: 0.75rem;
     margin-left: 0.75rem;
     margin-right: 0.75rem;
+    transition-duration: 300ms;
+    transition-property: border-color;
 }
 
 .all-project-link:hover {
