@@ -72,7 +72,7 @@ body {
 
 .fa-caret-down {
     transition-duration: 0.3s;
-    transition-property: color;
+    transition-property: transform, color;
 }
 
 .caret-rotate {
