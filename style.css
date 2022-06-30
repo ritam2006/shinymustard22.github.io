@@ -168,9 +168,16 @@ header {
     border-color: rgb(247, 178, 18);
 }
 
+.project {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
 .project img {
     margin-top: 0.5rem;
-    width: 100%;
+    width: auto;
+    height: 400px;
 }
 
 #all-projects {
